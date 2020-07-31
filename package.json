@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/anacsza/user-register-node#readme",
   "dependencies": {
+    "bull": "^3.16.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "nodemailer": "^6.4.11",
