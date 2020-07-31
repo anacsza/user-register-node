@@ -1,5 +1,5 @@
 import passwordGenerator from 'password-generator';
-
+import Mail from '../lib/Mail';
 export default {
     async store(req, res) {
         const { name, email } = req.body;
@@ -7,7 +7,7 @@ export default {
             name,
             email,
             password: passwordGenerator(15, false)
-        }
+        };
         return res.json(user);
     }
 }
